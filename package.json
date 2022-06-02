@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon --ignore client --exec babel-node --presets env index.js",
+    "server": "nodemon --ignore clients --exec babel-node --presets env index.js",
     "client": "npm start --prefix clients",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run clients\""
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
